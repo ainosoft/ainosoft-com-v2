@@ -196,7 +196,7 @@
   </div>
   <br />
 
-  <mat-tab-group mat-align-tabs="center" (selectedIndexChange)="portfolioTab($event)">
+  <mat-tab-group mat-align-tabs="center">
     <mat-tab label="All" class="folio-tab">
       <div *ngFor="let folio of portfolioAll" class="folio-item allImages">
         <img src="{{folio}}" class="folioImg" alt="" title="">
