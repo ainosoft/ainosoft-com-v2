@@ -1,0 +1,488 @@
+/** First slide **/
+.image-container {
+  background-image: url("../assets/images/bg/background.png");
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.down {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+  border: solid 1px white;
+  bottom: 10px;
+  left: 47.5%;
+  position: absolute;
+}
+
+/** Second slide **/
+
+.about-container {
+  height: 100%;
+  width: 100%;
+}
+
+.image-logo {
+  float: left;
+  height: 40px;
+  margin-top: 3px;
+}
+
+.scroll-link {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.link-holder {
+  position: absolute;
+  display: flex;
+  right: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.sections-head {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 200;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.about-heading {
+  font-size: 3.2em;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  color: #666;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  animation: focus-in-contract 2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.divider {
+  border-top-width: 2px;
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+
+.container p {
+  font-size: 1.1em;
+  max-width: 800px;
+  color: black;
+  line-height: 1.8em;
+  padding: 10px;
+  font-weight: 300;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.facts-holder {
+  display: flex;
+  width: 100%;
+  height: 25%;
+}
+
+.fact {
+  background: rgb(147, 164, 182);
+  width: 160px;
+  height: 90px;
+  margin-top: 2%;
+  margin-left: 7%;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.facts {
+  background: #404040;
+  width: 211px;
+  height: fit-content;
+  padding: 10px;
+  margin-top: 3.7%;
+  color: white;
+  margin-left: -133px;
+  margin-right: 50px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+span {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px;
+  position: absolute;
+  margin-top: -6px;
+  border-left: 1px solid;
+  margin-left: 5px;
+}
+
+/** Third slide **/
+
+.services-container {
+  background-image: url("../assets/images/bg/blackbackground.jpg");
+  /* background: black; */
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+  color: white;
+}
+
+.services-heading {
+  font-size: 3.2em;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+
+.divider3 {
+  border-top-width: 2px;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  background: white;
+}
+
+.service-icon {
+  background: rgba(255, 255, 255, 0);
+  border: solid 1px white;
+  left: 47.5%;
+  bottom: 42px;
+  position: relative;
+  color: black;
+}
+
+.content p {
+  font-size: 1.1em;
+  max-width: 800px;
+  line-height: 1.8em;
+  padding: 10px;
+  font-weight: 300;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.tabs {
+  width: 250px;
+  padding: 17px 35px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  margin: 25px;
+  margin-bottom: 0;
+  line-height: inherit;
+}
+
+.tabs-container {
+  text-align: center;
+  margin-top: 13%;
+}
+
+/* Fourth Slide */
+.tab-content-container {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  margin: 7% 0;
+}
+
+.path-vert {
+  stroke-dasharray: 1000;
+  animation: draw1 1.5s linear forwards;
+}
+
+@keyframes draw1 {
+  from {
+    stroke-dashoffset: 1200;
+  }
+  to {
+    stroke-dashoffset: 600;
+  }
+}
+
+.icon-holder {
+  background: #404040;
+}
+
+.shadow-icon {
+  -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(rgba(0, 0, 0, 0.5)));
+}
+
+.slider-heading {
+  font-size: 24px;
+  color: #ccc;
+  margin-bottom: 16px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 200;
+}
+
+.tab-content-container p {
+  font-size: 1.1em;
+  max-width: 800px;
+  line-height: 1.8em;
+  padding: 10px;
+  font-weight: 300;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.content1,
+.content2,
+.content3 {
+  animation: slide-in-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Fifth Slide */
+
+.clients-icon {
+  background: rgba(255, 255, 255, 0);
+  border: solid 1px white;
+  left: 47.5%;
+  bottom: 45px;
+  position: relative;
+  color: black;
+}
+
+.clients-container {
+  background-image: url("../assets/images/bg/blackbackground.jpg");
+  /* background: black; */
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clients-heading {
+  color: white;
+}
+
+.clients-content {
+  text-align: center;
+  color: white;
+}
+
+.owl-carousel1 {
+  margin-top: 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+.item {
+  display: table-cell;
+}
+
+.owl-stage1 {
+  animation: slide-leftt infinite linear 20s none;
+}
+
+@keyframes slide-leftt {
+  0% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+/* Sixth Slide */
+
+.portfolio-container {
+  height: 150%;
+  width: 100%;
+}
+
+.portfolio-content {
+  text-align: center;
+}
+
+.portfolio-content p {
+  font-size: 1.1em;
+  max-width: 800px;
+  line-height: 1.8em;
+  padding: 10px;
+  font-weight: 300;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.work-icon {
+  background: rgba(255, 255, 255, 0);
+  border: solid 1px white;
+  left: 47.5%;
+  bottom: 18px;
+  position: relative;
+  color: black;
+}
+
+.folio-item {
+  display: inline-block;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px 31px;
+
+}
+
+.folio-item:hover {
+  transform: scale(1.3);
+}
+
+.folio-tab {
+  height: 100vh;
+}
+
+/* Seventh Slide */
+
+.tech-container {
+  background-image: url("../assets/images/bg/blackbackground.jpg");
+  /* background: black; */
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tech-icon {
+  background: rgba(255, 255, 255, 0);
+  border: solid 1px white;
+  left: 47.5%;
+  bottom: 45px;
+  position: relative;
+  color: black;
+}
+
+.tech-heading {
+  color: white;
+  animation: focus-in-contract 2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.tech-content {
+  text-align: center;
+  color: white;
+}
+
+.owl-carousel2 {
+  margin-top: 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+.owl-stage2 {
+  animation: slide-left-tech infinite linear 40s none;
+}
+
+@keyframes slide-left-tech {
+  0% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(-4500px);
+  }
+}
+
+/* Eighth Slide (Career) */
+.career-icon {
+  background: rgba(255, 255, 255, 0);
+  border: solid 1px white;
+  left: 47.5%;
+  bottom: 19px;
+  position: relative;
+  color: black;
+}
+
+.career-container {
+  height: 100%;
+  width: 100%;
+}
+
+.career-content {
+  color: black;
+}
+
+/* Ninth Slide (Contacts) */
+.contact-container {
+  width: 100%;
+  height: 35%;
+  background: #404040;
+}
+
+.col {
+  width: 30%;
+  margin: 1%;
+  display: inline-block;
+  /* border: 1px solid white; */
+  color: white;
+  text-align: center;
+  padding: 2px;
+}
+
+.col p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.home-icon {
+  position: relative;
+  color: white;
+  font-size: xx-large;
+}
+
+.contact-divider {
+  width: 90%;
+  left: 5%;
+}
+
+.contact-icon {
+  bottom: -65px;
+}

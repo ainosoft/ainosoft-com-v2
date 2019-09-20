@@ -1,0 +1,359 @@
+<!-- First slide -->
+<div class="image-container"></div>
+<button mat-fab class="down" matTooltip="More">
+  <mat-icon>expand_more</mat-icon>
+</button>
+
+<!-- Second slide -->
+<div class="about-container">
+  <mat-toolbar>
+    <img class="image-logo" src="../assets/images/bg/logo.png">
+
+    <mat-list role="list" class="link-holder">
+      <mat-list-item role="listitem"><a href="#about" class="scroll-link">About Us</a></mat-list-item>
+      <mat-list-item role="listitem"><a href="#servises" class="scroll-link">Services</a></mat-list-item>
+      <mat-list-item role="listitem"><a href="#clientlist" class="scroll-link">Clients</a></mat-list-item>
+      <mat-list-item role="listitem"><a href="#portfolio" class="scroll-link">Portfolio</a></mat-list-item>
+      <mat-list-item role="listitem"><a href="#technologies" class="scroll-link">Technologies</a></mat-list-item>
+      <mat-list-item role="listitem"><a href="#prices" class="scroll-link">Careers</a></mat-list-item>
+      <mat-list-item role="listitem"><a href="#contacts" class="scroll-link">Contact Us</a></mat-list-item>
+    </mat-list>
+
+  </mat-toolbar>
+  <div class="container">
+    <h3 class="sections-head" [@enterAnimation]>Who we are</h3>
+    <h2 class="about-heading">About us</h2>
+
+    <div class="fist-slide">
+      <mat-divider class="divider"></mat-divider>
+      <p>We are a group of experienced engineers and designers in love with building applications of diverse nature
+        including web and mobile. We value not only the look of what we build but even more the process we follow,
+        architecture we use, designs we choose, implement. For us building applications is a scientific art achieved
+        through thorough use of Agile practices. We participate in all phases of software development lifecycle and
+        specialize in product development. </p>
+    </div>
+  </div>
+
+  <h3 class="sections-head" style="text-align: center;">We build</h3>
+  <mat-divider class="divider"></mat-divider>
+
+  <div class="facts-holder">
+
+    <div class="fact">
+    </div>
+    <div class="facts">
+      <mat-icon>phone_iphone</mat-icon>
+      <span>Fantastic Mobile Apps</span>
+    </div>
+    <div class="fact"></div>
+    <div class="facts">
+      <mat-icon>laptop_mac</mat-icon>
+      <span>Fast Web Apps</span>
+    </div>
+    <div class="fact"></div>
+    <div class="facts">
+      <mat-icon>people</mat-icon>
+      <span>Amazing Teams</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- Third slide -->
+<div class="services-container">
+  <button mat-fab class="service-icon" matTooltip="services">
+    <mat-icon>settings</mat-icon>
+  </button>
+  <div class="content">
+    <h3 class="sections-head">What we do</h3>
+    <h2 class="services-heading">Services</h2>
+    <mat-divider class="divider3"></mat-divider>
+    <p>We offer various services needed to build a software product in entirety. We engage clients and other
+      stakeholders at any required phase, be it conceptualization to deployment and support. We engage with clients
+      using multiple innovative and flexible business models that meet client needs in total.</p>
+  </div>
+  <br />
+  <div class="tabs-container">
+    <button mat-raised-button class="tabs startup" (click)="changeTabContent('startup');">STARTUP <br />
+      PARTNERSHIP</button>
+    <button mat-raised-button class="tabs" (click)="changeTabContent('resource');">RESOURCE <br /> AUGMENTATION</button>
+    <button mat-raised-button class="tabs" (click)="changeTabContent('delivery');">FULLY MANAGED <br /> SOLUTION
+      DELIVERY</button>
+  </div>
+
+  <div style="display: flex">
+    <svg height="50" width="500">
+      <line class="line" x1="340" y1="0" x2="340" y2="200" style="stroke:white; stroke-width:1.5;" />
+    </svg>
+    <svg height="50" width="500">
+      <line class="line" x1="220" y1="0" x2="220" y2="200" style="stroke:white; stroke-width:1.5;" />
+    </svg>
+    <svg height="50" width="500">
+      <line class="line" x1="80" y1="0" x2="80" y2="200" style="stroke:white; stroke-width:1.5;" />
+    </svg>
+  </div>
+</div>
+
+<!-- Fourth Slide -->
+<div class="tab-content-container">
+
+  <div class="tabcontent content1">
+    <button mat-fab class="icon-holder" matTooltip="Startup partnership">
+      <i class="fa fa-sitemap fa-2x shadow-icon"></i>
+    </button>
+    <h3 class="slider-heading">Startup partnership</h3>
+    <p>We specialize in providing unique engagement models to address startup needs. Since each startup encounters
+      unique business environments, they also need unique engagement models to see their business through to success.
+      Contact us to understand what we can offer you using our site chat feature or over a phone call for a quick
+      response.</p>
+  </div>
+
+  <div class="tabcontent content2">
+    <button mat-fab class="icon-holder" matTooltip="Resource augmentation">
+      <i class="fa fa-male fa-2x shadow-icon"></i>
+    </button>
+    <h3 class="slider-heading">Resource augmentation</h3>
+    <p>Augment and strengthen your existing team using our colleagues experienced at effective remote collaboration. We
+      have extensive experience working with remote clients located in varied time zones using a wide array of
+      collaboration and communication tools.</p>
+  </div>
+
+  <div class="tabcontent content3">
+    <button mat-fab class="icon-holder" matTooltip="Fully managed solution delivery">
+      <i class="fa fa-truck fa-2x shadow-icon"></i>
+    </button>
+    <h3 class="slider-heading">Fully managed solution delivery</h3>
+    <p>Are you looking for minimal involvement and timely deliveries. This model could be for you. We take complete
+      ownership of end to end management of your requirements and work towards mutually agreed timely deliveries</p>
+  </div>
+
+</div>
+
+<!-- Fifth Slide (Clients) -->
+<div class="clients-container">
+  <button mat-fab class="clients-icon" matTooltip="clients">
+    <i class="fa fa-users fa-2x"></i>
+  </button>
+
+  <div class="clients-content">
+    <h3 class="sections-head">For who we do it</h3>
+    <h2 class="about-heading clients-heading">Clients</h2>
+    <mat-divider class="divider3"></mat-divider>
+  </div>
+
+  <div class="owl-carousel1">
+    <div class="owl-stage1">
+
+      <div class="item">
+        <img src="../assets/images/clients/c1.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/clients/c2.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/clients/c3.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/clients/c4.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/clients/c5.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/clients/c6.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/clients/c7.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/clients/c8.png" class="respimg" alt="" title="">
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Sixth Slide -->
+<div class="portfolio-container">
+  <button mat-fab class="work-icon" matTooltip="Our work">
+    <mat-icon>work</mat-icon>
+  </button>
+
+  <div class="portfolio-content">
+    <h3 class="sections-head">Portfolio</h3>
+    <h2 class="about-heading">Our work</h2>
+    <mat-divider class="divider3"></mat-divider>
+    <br />
+    <p>We let our work do that talking. Below is a sample of our work</p>
+  </div>
+  <br />
+
+  <mat-tab-group mat-align-tabs="center" (selectedIndexChange)="portfolioTab($event)">
+    <mat-tab label="All" class="folio-tab">
+      <div *ngFor="let folio of portfolioAll" class="folio-item allImages">
+        <img src="{{folio}}" class="folioImg" alt="" title="">
+      </div>
+    </mat-tab>
+    <mat-tab label="Web" class="folio-tab">
+      <div *ngFor="let folio of portfolioWeb" class="folio-item webImages">
+        <img src="{{folio}}" class="folioImg" alt="" title="">
+      </div>
+    </mat-tab>
+    <mat-tab label="Mobile" class="folio-tab">
+      <div *ngFor="let folio of portfolioPhone" class="folio-item mobileImages">
+        <img src="{{folio}}" class="folioImg" alt="" title="">
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+<!-- Seventh Slide (technologies) -->
+<div class="tech-container">
+  <button mat-fab class="tech-icon" matTooltip="technologies">
+    <i class="fa fa-code fa-2x"></i>
+  </button>
+
+  <div class="tech-content">
+    <h3 class="sections-head">What we use</h3>
+    <h2 class="about-heading tech-heading">Technologies</h2>
+    <mat-divider class="divider3"></mat-divider>
+  </div>
+
+  <div class="owl-carousel2">
+    <div class="owl-stage2">
+
+      <div class="item">
+        <img src="../assets/images/technologies/t1.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t2.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t3.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t4.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t5.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t6.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t7.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t8.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t9.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t10.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t11.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t12.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t13.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t14.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t15.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t16.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t17.png" class="respimg" alt="" title="">
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/technologies/t18.png" class="respimg" alt="" title="">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Eighth Slide (Career) -->
+<div class="career-container">
+  <button mat-fab class="career-icon" matTooltip="Career">
+    <i class="fa fa-users fa-2x"></i>
+  </button>
+
+  <div class="career-content content">
+    <h3 class="sections-head">Work with us</h3>
+    <h2 class="about-heading">Careers</h2>
+    <mat-divider class="divider3"></mat-divider>
+    <br />
+    <p>We value quality of life for any individual engaged with us at a premium and we believe in the idiom of a happy
+      individual is a productive worker. We are always open to engage and hire individuals with a love for building
+      quality applications, an attitude of customer first with strong ownership.</p>
+    <p>Along with a super charged atmosphere that promotes and values individual freedom and team effort, we offer
+      industry leading compensation. Here too if you are located near our clients and have unique skills to offer we can
+      open up unique engagement models that are rare in the industry.</p>
+    <p>Find this exciting enough ? - please contact us with a brief introduction of yourself and your suitability to our
+      business using our site chat feature.</p>
+  </div>
+  <br />
+
+  <button mat-fab class="service-icon contact-icon" matTooltip="">
+    <mat-icon>expand_less</mat-icon>
+  </button>
+</div>
+
+<!-- Ninth Slide (Contacts) -->
+<div class="contact-container">
+  <div class="col contact1">
+    <mat-icon class="home-icon" matTooltip="Address">home</mat-icon>
+    <p>
+      1 Hallidie Plaza 2nd Floor, <br /> CA 94102 <br /> San Francisco
+      <br />
+      <mat-icon class="phone-icon">phone_iphone</mat-icon> &nbsp; +1 415 481 4833
+    </p>
+  </div>
+  <div class="col contact2">
+    <p>Ainosoft ©2017 All rights reserved.</p>
+    <mat-divider class="divider3 contact-divider"></mat-divider>
+
+  </div>
+  <div class="col contact3">
+    <mat-icon class="home-icon" matTooltip="Address">home</mat-icon>
+    <p>
+      3rd Floor, Gulmohar Court, Lane B, Koregaon Park, <br /> Pune, Maharashtra 411001 <br /> India
+      <br />
+      <mat-icon class="phone-icon">phone_iphone</mat-icon> &nbsp; +91 20 2605 1117
+    </p>
+  </div>
+</div>
