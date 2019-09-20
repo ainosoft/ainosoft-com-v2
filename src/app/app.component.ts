@@ -29,16 +29,16 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     /** Hides all the tab contents intially */
-    const tabcontent = document.getElementsByClassName('tabcontent');
-    for (let i = 0; i < tabcontent.length; i++) {
-      const content = tabcontent[i] as HTMLElement;
+    const tabcontent = document.querySelectorAll('tabcontent');
+    for (const i of Array.from(tabcontent)) {
+      const content = i as HTMLElement;
       content.style.display = 'none';
     }
 
     /** Hides all the animation lines connected to service tabs initially */
     const lines = document.getElementsByClassName('line');
-    for (let j = 0; j < lines.length; j++) {
-      const line = lines[j] as HTMLElement;
+    for (const j of Array.from(lines)) {
+      const line = j as HTMLElement;
       line.style.display = 'none';
     }
     const content1 = document.getElementsByClassName('tabcontent')[0] as HTMLElement;
@@ -49,20 +49,20 @@ export class AppComponent implements OnInit {
     line1.style.display = 'block';
   }
 
-  /** Toggles the service tabs content along with the animation lines connected to 
-   *  service tabs
+  /** Toggles the service tabs content along with the animation lines connected to
+   * service tabs
    */
   changeTabContent(value) {
     const lines = document.getElementsByClassName('line');
-    for (let j = 0; j < lines.length; j++) {
-      const line = lines[j] as HTMLElement;
+    for (const j of Array.from(lines)) {
+      const line = j as HTMLElement;
       line.classList.remove('path-vert');
       line.style.display = 'none';
     }
 
     const tabcontent = document.getElementsByClassName('tabcontent');
-    for (let i = 0; i < tabcontent.length; i++) {
-      const content = tabcontent[i] as HTMLElement;
+    for (const i of Array.from(tabcontent)) {
+      const content = i as HTMLElement;
       content.style.display = 'none';
       if (value === 'startup') {
         const content1 = tabcontent[0] as HTMLElement;
