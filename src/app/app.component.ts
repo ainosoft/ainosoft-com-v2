@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     /** Hides all the tab contents intially */
-    const tabcontent = document.querySelectorAll('tabcontent');
+    const tabcontent = document.getElementsByClassName('tabcontent');
     for (const i of Array.from(tabcontent)) {
       const content = i as HTMLElement;
       content.style.display = 'none';
